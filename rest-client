@@ -1,0 +1,26 @@
+GET http://localhost:5000/users
+
+###Get Particular Data
+GET http://localhost:5000/users/f6d2d3b7-10ef-4f2c-9302-5836321165b0
+
+###Create new User
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "firstName": "Shivam",
+    "lastName": "Yadav",
+    "age": 23
+}
+
+###PATCH request
+PATCH http://localhost:5000/users/f6d2d3b7-10ef-4f2c-9302-5836321165b0
+Content-Type: application/json
+
+{
+    "firstName": "Rahul",
+    "age": 23
+}
+
+### Delete request
+DELETE http://localhost:5000/users/dd80f4eb-397b-4521-8c97-ca4553bfc09f
